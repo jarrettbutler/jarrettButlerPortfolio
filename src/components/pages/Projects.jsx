@@ -9,11 +9,25 @@ import readMe from '../../assets/images/ReadMe.jpg';
 const Styles = {
     divStyles: {
         background: '#B8DBD9',
+        textAlign: 'center',
     },
     imageStyles: {
         height: '200px',
         width: '200px',
-    }
+    },
+    aStyles: {
+        display: 'inline-block',
+        paddingLeft: '50px',
+        paddingRight: '50px',
+        paddingTop: '40px',
+        paddingBottom: '40px',
+        textDecoration: 'none',
+        fontSize: '20px',
+    },
+    h1Style: {
+        fontSize: '75px',
+        padding: '10px',
+    },
 }
 
 const projects = [
@@ -47,16 +61,16 @@ const projects = [
     {
         link: 'https://github.com/jarrettbutler/alphaTeam',
         image: alphaTeam,
-        deployed: "",
+        deployed: "https://github.com/jarrettbutler/alphaTeam",
         name: 'Alpha Team',
-        description: 'Add your team by using commands in the terminal to create your own',
+        description: 'Add your team by using the terminal to create your own',
         stack: 'Tech Stack: Tests, Javascript, bootstrap',
         alt: 'image of Alpha Team'
     },
     {
         link: 'https://github.com/jarrettbutler/READme_genie',
         image: readMe,
-        deployed: "",
+        deployed: "https://github.com/jarrettbutler/READme_genie",
         name: 'Read Me Generator',
         description: 'A command prompt application that will creat a ReadMe file',
         stack: 'Tech Stack: prompt, JavaScript',
@@ -76,13 +90,15 @@ const projects = [
 export default function Portfolio() {
     return (
         <div style={Styles.divStyles}>
-            <h1>Projects</h1>
-            <a href={projects[0].deployed} target="_blank">
-                <img style={Styles.imageStyles} src={projects[0].image} alt="Project Example 01" />
-                <p>{projects[0].name}</p>
-
+            <h1 style={Styles.h1Style}>Projects</h1>
+            {projects.map((project) => (
+            <a style={Styles.aStyles} href={project.deployed} target="_blank">
+                <img style={Styles.imageStyles} src={project.image} alt={project.alt} />
+                <p>{project.name}</p>
+                <p>{project.description}</p>
+                <p>{project.stack}</p>
             </a>
-
+            ))}
         </div>
 
     )

@@ -1,23 +1,34 @@
 import React from 'react';
+import '../assets/CSS/style.css'
 
 const Styles = {
-  tabStyle: {
+  headerStyle: {
     display: 'flex',
     justifyContent: 'space-between',
     background: '#586F7C',
     padding: '10px',
-  }
+  },
+  tabStyles: {
+    display: 'flex',
+    flexWrap: 'wrap',
+    listStyle: 'none'
+  },
+  listStyle: {
+    paddingRight: '20px',
+    paddingTop: '7px',
+    fontSize: '20px'
+  },
 }
 
 function NavTabs({ currentPage, handlePageChange }) {
   return (
-    <div style={Styles.tabStyle}>
+    <div style={Styles.headerStyle}>
     <h1><a href="#AboutMe" onClick={() => handlePageChange('AboutMe')} className={currentPage === 'AboutMe' ? 'nav-link active' : 'nav-link'}>
           Jarrett Butler
         </a></h1>
-    <ul className="nav nav-tabs">
+    <ul style={Styles.tabStyles}>
       <li className="nav-item">
-        <a
+        <a style={Styles.listStyle}
           href="#AboutMe"
           onClick={() => handlePageChange('AboutMe')}
           className={currentPage === 'AboutMe' ? 'nav-link active' : 'nav-link'}
@@ -26,16 +37,16 @@ function NavTabs({ currentPage, handlePageChange }) {
         </a>
       </li>
       <li className="nav-item">
-        <a
-          href="#Portfolio"
+        <a style={Styles.listStyle}
+          href="#Projects"
           onClick={() => handlePageChange('Projects')}
           className={currentPage === 'Projects' ? 'nav-link active' : 'nav-link'}
         >
-          Portfolio
+          Projects
         </a>
       </li>
       <li className="nav-item">
-        <a
+        <a style={Styles.listStyle}
           href="#ContactMe"
           onClick={() => handlePageChange('ContactMe')}
           className={currentPage === 'ContactMe' ? 'nav-link active' : 'nav-link'}
@@ -44,7 +55,7 @@ function NavTabs({ currentPage, handlePageChange }) {
         </a>
       </li>
       <li className="nav-item">
-        <a
+        <a style={Styles.listStyle}
           href="#Resume"
           onClick={() => handlePageChange('Resume')}
           className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}

@@ -1,6 +1,19 @@
 import React, { useEffect, useState } from 'react';
 import { validateEmail } from '../../utils/helpers';
 
+const Styles ={
+  divStyle: {
+    textAlign: 'center',
+    background: '#B8DBD9'
+  },
+  h1Style: {
+    fontSize: '75px',
+    padding: '10px',
+},
+formStyle: {
+  display: 'inline',
+}
+}
 
 function ContactMe() {
     const [name, setName] = useState('');
@@ -26,20 +39,21 @@ function ContactMe() {
         e.preventDefault();
 
         if (!validateEmail(email) || !name) {
-            setErrorMessage('Email or username is invalid');
+            setErrorMessage('Email is invalid');
             return;
           }
-          if (message === null) {
+          if (message == null) {
             setErrorMessage(
               `The message area is empty`
             );
             return;
           }
-          alert(`Hello ${name}`);
+          alert(`Thanks for letting me know ${name}!`);
       
           setName('');
           setEmail('');
           setMessage('');
+          setErrorMessage('');
     };
 
     var obj = {};
@@ -55,8 +69,8 @@ function ContactMe() {
       }, [obj]);
 
     return (
-        <div>
-            <h1>Contact Me</h1>
+        <div style={Styles.divStyle}>
+            <h1 style={Styles.h1Style}>Contact Me</h1>
             <form className="form">
             <input
           value={name}

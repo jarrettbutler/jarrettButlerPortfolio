@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/jarrettButlerPortfolio/static/css/main.c2cab247.css",
+    "main.js": "/jarrettButlerPortfolio/static/js/main.7ce46884.js",
+    "static/media/me.jpg": "/jarrettButlerPortfolio/static/media/me.1485f4183c84c558da67.jpg",
+    "static/media/homepage1.jpg": "/jarrettButlerPortfolio/static/media/homepage1.0b60fb3308c26e83300c.jpg",
+    "static/media/ReadMe.jpg": "/jarrettButlerPortfolio/static/media/ReadMe.608b8cdb965c664f7111.jpg",
+    "static/media/portfolio.jpg": "/jarrettButlerPortfolio/static/media/portfolio.7ea51d55eac17343af44.jpg",
+    "static/media/mydaily.jpg": "/jarrettButlerPortfolio/static/media/mydaily.2ec345b12f27f6ee2fd4.jpg",
+    "static/media/alphaTeam.jpg": "/jarrettButlerPortfolio/static/media/alphaTeam.3a6eb3dc970d9fa5a8b4.jpg",
+    "static/media/Jarrett_resume.docx": "/jarrettButlerPortfolio/static/media/Jarrett_resume.12a74c2096670f19c3c0.docx",
+    "static/media/construction.jpg": "/jarrettButlerPortfolio/static/media/construction.fdee6c92e32bfe2df2bb.jpg",
+    "static/media/mail.png": "/jarrettButlerPortfolio/static/media/mail.7c7355a7a7714ea5e102.png",
+    "index.html": "/jarrettButlerPortfolio/index.html",
+    "main.c2cab247.css.map": "/jarrettButlerPortfolio/static/css/main.c2cab247.css.map",
+    "main.7ce46884.js.map": "/jarrettButlerPortfolio/static/js/main.7ce46884.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c2cab247.css",
+    "static/js/main.7ce46884.js"
+  ]
+}
