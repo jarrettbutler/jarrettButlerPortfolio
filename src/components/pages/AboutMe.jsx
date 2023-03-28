@@ -7,7 +7,8 @@ const styles = {
         width: '200px',
         overflow: 'hidden',
         borderRadius: '50%',
-        margin: '10px'
+        margin: '10px',
+        paddingBottom: '5px'
     },
     divStyle: {
         background: '#B8DBD9',
