@@ -7,7 +7,7 @@ const Styles = {
     },
     divStyle: {
         textAlign: 'Center',
-        fontSize: '30px',
+        fontSize: '29px',
         background: '#B8DBD9'
     },
     h1Style: {

@@ -20,7 +20,7 @@ const styles = {
     },
     pStyles: {
         padding: '10px',
-        fontSize: '28px',
+        fontSize: '27px',
         width: '75%',
         marginLeft: '12.5%'
     }
