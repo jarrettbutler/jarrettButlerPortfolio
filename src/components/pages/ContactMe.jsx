@@ -4,7 +4,8 @@ import { validateEmail } from '../../utils/helpers';
 const Styles ={
   divStyle: {
     textAlign: 'center',
-    background: '#B8DBD9'
+    background: '#B8DBD9',
+    paddingBottom: '100%'
   },
   h1Style: {
     fontSize: '75px',

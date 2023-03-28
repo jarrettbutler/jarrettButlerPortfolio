@@ -8,7 +8,8 @@ const Styles = {
     divStyle: {
         textAlign: 'Center',
         fontSize: '29px',
-        background: '#B8DBD9'
+        background: '#B8DBD9',
+        paddingBottom: '50px'
     },
     h1Style: {
         fontSize: '75px',

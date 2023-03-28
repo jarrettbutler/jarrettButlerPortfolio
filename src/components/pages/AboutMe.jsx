@@ -13,7 +13,7 @@ const styles = {
         background: '#B8DBD9',
         textAlign: 'center',
         fontSize: 'large',
-        paddingBottom: '10px'
+        paddingBottom: '50px'
     },
     h1Style: {
         fontSize: '75px',
