@@ -13,6 +13,7 @@ const styles = {
         background: '#B8DBD9',
         textAlign: 'center',
         fontSize: 'large',
+        paddingBottom: '10px'
     },
     h1Style: {
         fontSize: '75px',
@@ -20,7 +21,7 @@ const styles = {
     },
     pStyles: {
         padding: '10px',
-        fontSize: '28px',
+        fontSize: '26px',
         width: '75%',
         marginLeft: '12.5%'
     }
