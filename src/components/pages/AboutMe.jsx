@@ -7,8 +7,7 @@ const styles = {
         width: '200px',
         overflow: 'hidden',
         borderRadius: '50%',
-        margin: '10px',
-        paddingBottom: '5px'
+        margin: '10px'
     },
     divStyle: {
         background: '#B8DBD9',
@@ -21,7 +20,7 @@ const styles = {
     },
     pStyles: {
         padding: '10px',
-        fontSize: '27px',
+        fontSize: '28px',
         width: '75%',
         marginLeft: '12.5%'
     }
@@ -45,8 +44,9 @@ export default function AboutMe() {
                 Professionally I am just getting started and would like to take on a few simple projects to keep
                 developing my skills. I always bring a positive attitude towards my projects and love to sit and put
                 my nose to the grindstone when things need to get done. If you select me I will bring nothing but
-                the best and most professional work towards your project to ensure you can get you website up and
-                running, updated and/or whatever you need for your web development. If you are interested please <a href='ContactMe'>Contact Me!</a>
+                the best and most professional work towards your project to ensure you can get your website up and
+                running, updated and/or whatever you need for your web development. The things I am most pationate about 
+                with regards to coding is the back-end or database coding. If you are interested please <a href='ContactMe'>Contact Me!</a>
             </p>
         </div>
     )
