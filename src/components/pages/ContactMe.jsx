@@ -11,7 +11,7 @@ const Styles ={
     padding: '10px',
 },
 formStyle: {
-  display: 'inline',
+  display: 'inline !',
 }
 }
 
@@ -71,22 +71,22 @@ function ContactMe() {
     return (
         <div style={Styles.divStyle}>
             <h1 style={Styles.h1Style}>Contact Me</h1>
-            <form className="form">
-            <input
+            <form style={{display: 'inline'}}>
+            <input 
           value={name}
           name="name"
           onChange={handleInputChange}
           type="text"
           placeholder="Name"
         />
-        <input
+        <input 
           value={email}
           name="email"
           onChange={handleInputChange}
           type="email"
           placeholder="email"
         />
-        <input
+        <input 
           value={message}
           name="message"
           onChange={handleInputChange}
